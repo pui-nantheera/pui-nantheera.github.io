@@ -9,6 +9,58 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+      .publicationlist {
+        --link-pdf: #CE7B69;
+        --link-code: #4D8CCB;
+        --link-proj: #C98AEE;
+        --link-arxiv: #C4906E;
+        --link-data: #5a9e6f;
+      }
+      .publicationlist .pub-list { list-style: none; padding-left: 0; margin: 0; }
+      .publicationlist .pub-item {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 16px;
+        align-items: start;
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+      }
+      .publicationlist .pub-item:last-child { border-bottom: none; }
+      .publicationlist .pub-thumb {
+        width: 120px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        background: #f5f5f5;
+        border: 1px solid #e0e0e0;
+        border-radius: 3px;
+        display: block;
+      }
+      .publicationlist .pub-content { min-width: 0; }
+      .publicationlist .pub-title { font-size: 1rem; font-weight: bold; display: block; margin-bottom: 2px; color: #222; }
+      .publicationlist .pub-meta { font-size: 0.95rem; color: #444; margin-bottom: 4px; }
+      .publicationlist .pub-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+      .publicationlist .pub-link {
+        font-size: 0.72rem;
+        text-decoration: none;
+        padding: 1px 7px;
+        border-radius: 3px;
+        border: 1px solid currentColor;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        transition: opacity 0.15s;
+      }
+      .publicationlist .pub-link:hover { opacity: 0.7; text-decoration: none; }
+      .publicationlist .pub-link.pdf  { color: var(--link-pdf); }
+      .publicationlist .pub-link.code { color: var(--link-code); }
+      .publicationlist .pub-link.proj { color: var(--link-proj); }
+      .publicationlist .pub-link.arxiv{ color: var(--link-arxiv); }
+      .publicationlist .pub-link.data { color: var(--link-data); }
+      @media (max-width: 640px) {
+        .publicationlist .pub-item { grid-template-columns: 80px 1fr; gap: 10px; }
+        .publicationlist .pub-thumb { width: 80px; }
+      }
+    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
@@ -269,21 +321,134 @@
 
           <div class="publicationlist">
             <h5>Selected papers</h5>
-            <ul>
-              <li><a>ELVIS: Enhance Low-light for Video Instance Segmentation in the Dark</a>. J Lin, R Lin, Y Li, D Bull, N Anantrasirichai, IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2026 <pdf>[</pdf><a href="https://arxiv.org/abs/2512.01495">PDF</a><pdf>]</pdf> [<a href="https://joannelin168.github.io/research/ELVIS/">Project</a>] </li>
-              <li><a>Prune Wisely, Reconstruct Sharply: Compact 3D Gaussian Splatting via Adaptive Pruning and Difference-of-Gaussian Primitives</a>. H Wang, G Huang, F Zhang, D Bull, and N Anantrasirichai, IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2026 <pdf>[</pdf><a href="https://arxiv.org/pdf/2602.24136">PDF</a><pdf>]</pdf> </li>
-              <li><a>Bayesian Neural Networks for One-to-Many Mapping in Image Enhancement</a>. G Huang, Z Qi, RR Lin, Q Yang, D Bull, N Anantrasirichai, AAAI 2026 <pdf>[</pdf><a href="https://arxiv.org/pdf/2501.14265?">PDF</a><pdf>]</pdf> [<a href='https://github.com/BinCVER/BEM' target="_blank">Code</a>] <pdf>[</pdf><a href="https://pui-nantheera.github.io/research/CIC/low_light_video_enhancement.html">Project</a><pdf>]</pdf></li>
-              <li><a>RMFAT: Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator</a>. Z Liu, N Anantrasirichai, AAAI 2026 <pdf>[</pdf><a href="https://arxiv.org/pdf/2508.11409?">PDF</a><pdf>]</pdf> [<a href='https://github.com/Lzm03/RMFAT' target="_blank">Code & Datasets</a>] <pdf>[</pdf><a href="https://pui-nantheera.github.io/research/Heathaze/DeepCLEAR.html">Project</a><pdf>]</pdf></li>
-              <li><a>Unsupervised anomaly detection for volcanic deformation in InSAR imagery</a>. R Popescu, N Anantrasirichai, J Biggs, Earth and Space Science, 2025 <pdf>[</pdf><a href="https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024EA003892">PDF</a><pdf>]</pdf></li>
-              <li><a>Feature Denoising For Low-Light Instance Segmentation Using Weighted Non-Local Blocks</a>. J Lin, N Anantrasirichai, D Bull, ICASSP 2025 <pdf>[</pdf><a href="https://arxiv.org/pdf/2402.18307">PDF</a><pdf>]</pdf></li>
-              <li><a>UW-GS: Distractor-Aware 3D Gaussian Splatting for Enhanced Underwater Scene Reconstruction</a>. H Wang, N Anantrasirichai, F Zhang, D Bull, WACV 2025 <pdf>[</pdf><a href="https://arxiv.org/pdf/2410.01517">PDF</a><pdf>]</pdf> [<a href='https://github.com/WangHaoran16/UW-GS/tree/master' target="_blank">Code</a>] <pdf>[</pdf><a href="https://pui-nantheera.github.io/research/CIC/MyUnderwaterWorld.html">Project</a><pdf>]</pdf></li>
-              <li><a>TaGAT: Topology-Aware Graph Attention Network For Multi-modal Retinal Image Fusion</a>. X Tian, N Anantrasirichai, L Nicholson, A Achim. MICCAI 2024 <pdf>[</pdf><a href="https://arxiv.org/pdf/2407.14188">PDF</a><pdf>]</pdf> <pdf>[</pdf><a target="_blank" href="https://github.com/xintian-99/TaGAT">Code</a><pdf>]</pdf> [<a href='https://data.bris.ac.uk/data/dataset/1hvd8aw0g6l6g28fnub18hgse4'>Dataset</a>] [<a href='https://pui-nantheera.github.io/research/MedImages/RetinalImages.html'>Project</a>]</li>
-              <li><a>Parasitic Egg Detection and Classification in Low-cost Microscopic Images using Transfer Learning</a>. T Suwannaphong, S Chavana, S Tongsom, D Palasuwan, T H Chalidabhongse, and N Anantrasirichai. SN Computer Science. 2023 <pdf>[</pdf><a href="https://link.springer.com/article/10.1007/s42979-023-02406-8">PDF</a><pdf>]</pdf> <pdf>[</pdf><a target="_blank" href="https://zenodo.org/records/10437395">Dataset</a><pdf>]</pdf></li>
-              <li><a>Current Advances in Computational Lung Ultrasound Imaging: A Review</a>. T. Yang, O. Karakuş, N. Anantrasirichai, and A. Achim.  IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control. 2023.<pdf>[</pdf><a href="https://arxiv.org/pdf/2103.11366.pdf">PDF</a><pdf>]</pdf> </li>
-              <li><a>ICIP 2022 Challenge on Parasitic Egg Detection and Classification in Microscopic Images: Dataset, Methods and Results</a>. N Anantrasirichai, TH Chalidabhongse, D Palasuwan, K Naruenatthanaset, T Kobchaisawat, N Nunthanasup, K Boonpeng, X Ma,  and A Achim. IEEE International Conference on Image Processing. 2022. <pdf>[</pdf><a href="https://arxiv.org/pdf/2208.06063.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a target="_blank" href="https://ieee-dataport.org/competitions/parasitic-egg-detection-and-classification-microscopic-images">Dataset</a><pdf>]</pdf> <pdf>[</pdf><a target="_blank" href="https://icip2022challenge.piclab.ai/">Website</a><pdf>]</pdf> </li>
-              <li><a>Detecting Ground Deformation in the Built Environment using Sparse Satellite InSAR data with a Convolutional Neural Network</a>. N. Anantrasirichai, J. Biggs, K. Kelevitz, Z. Sadeghi, T. Wright, J. Thompson, A. Achim and D. Bull.  IEEE Transactions on Geoscience and Remote Sensing. 2020.<pdf>[</pdf><a href="https://arxiv.org/pdf/2005.03221.pdf">PDF</a><pdf>]</pdf> [<a href="https://pui-nantheera.github.io/research/NERC/ground_deformation.html">Project</a>]</li>
-              <li><a>Image fusion via sparse regularization with non-convex penalties</a>. N. Anantrasirichai, R. Zheng, I. Selesnick and A. Achim.  Pattern Recognition Letters. 2020. <pdf>[</pdf><a href="https://arxiv.org/pdf/1905.09645.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="https://github.com/pui-nantheera/Image-Fusion-via-Sparse-Regularization">CODE</a><pdf>]</pdf> </pdf></li>
-              <li><a>A Deep Learning Approach to Detecting Volcano Deformation from Satellite Imagery using Synthetic Datasets</a>. N. Anantrasirichai, J. Biggs, F. Albino, and David Bull. Remote Sensing of Environment. 2019. <pdf>[</pdf><a href="https://arxiv.org/abs/1905.07286">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="https://www.sciencedirect.com/science/article/pii/S003442571930183X" target="_blank">BibTeX</a><pdf>]</pdf> [<a href="https://github.com/pui-nantheera/volcano_deform_detection" target="_blank">CODE</a>] [<a href="https://seis.bristol.ac.uk/~eexna\research\volcanicUnrest.html">Project</a>]</li>
+            <ul class="pub-list">
+              <li class="pub-item"><img class="pub-thumb" loading="lazy" src="thumbnails/Review2.jpg" alt=""><div class="pub-content">
+        <span class="pub-title">Advances in Artificial Intelligence: a Review for the Creative Industries</span>
+        <div class="pub-meta"><u>N Anantrasirichai</u>, F Zhang, D Bull. <em>Artificial Intelligence Review</em>. 2026</div>
+        <div class="pub-links"><a class="pub-link pdf" href="https://link.springer.com/article/10.1007/s10462-026-11494-w" target="_blank">PDF</a></div>
+      </div></li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="thumbnails/ELVIS.jpg" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">ELVIS: Enhance Low-light for Video Instance Segmentation in the Dark</span>
+                  <div class="pub-meta">J Lin, R Lin, Y Li, D Bull, <u>N Anantrasirichai</u>. <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>. 2026</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://arxiv.org/abs/2512.01495" target="_blank">PDF</a>
+                    <a class="pub-link proj" href="https://joannelin168.github.io/research/ELVIS/" target="_blank">Project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="thumbnails/Prune.jpg" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">Prune Wisely, Reconstruct Sharply: Compact 3D Gaussian Splatting via Adaptive Pruning and Difference-of-Gaussian Primitives</span>
+                  <div class="pub-meta">H Wang, G Huang, F Zhang, D Bull, <u>N Anantrasirichai</u>. <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>. 2026</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://arxiv.org/pdf/2602.24136" target="_blank">PDF</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="thumbnails/Bayes.jpg" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">Bayesian Neural Networks for One-to-Many Mapping in Image Enhancement</span>
+                  <div class="pub-meta">G Huang, Z Qi, RR Lin, Q Yang, D Bull, <u>N Anantrasirichai</u>. <em>AAAI Conference on Artificial Intelligence</em>. 2026</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://arxiv.org/pdf/2501.14265" target="_blank">PDF</a>
+                    <a class="pub-link code" href="https://github.com/BinCVER/BEM" target="_blank">Code</a>
+                    <a class="pub-link proj" href="https://pui-nantheera.github.io/research/CIC/low_light_video_enhancement.html" target="_blank">Project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="thumbnails/RMFAT.jpg" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">RMFAT: Recurrent Multi-scale Feature Atmospheric Turbulence Mitigator</span>
+                  <div class="pub-meta">Z Liu, <u>N Anantrasirichai</u>. <em>AAAI Conference on Artificial Intelligence</em>. 2026</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://arxiv.org/pdf/2508.11409" target="_blank">PDF</a>
+                    <a class="pub-link code" href="https://github.com/Lzm03/RMFAT" target="_blank">Code</a>
+                    <a class="pub-link proj" href="https://pui-nantheera.github.io/research/Heathaze/DeepCLEAR.html" target="_blank">Project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 90'><rect width='120' height='90' fill='%23f5f5f5'/><rect x='28' y='14' width='64' height='62' fill='white' stroke='%23d0d0d0'/><line x1='35' y1='27' x2='85' y2='27' stroke='%23dcdcdc'/><line x1='35' y1='37' x2='85' y2='37' stroke='%23dcdcdc'/><line x1='35' y1='47' x2='78' y2='47' stroke='%23dcdcdc'/><line x1='35' y1='57' x2='82' y2='57' stroke='%23dcdcdc'/><line x1='35' y1='67' x2='70' y2='67' stroke='%23dcdcdc'/></svg>" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">Unsupervised anomaly detection for volcanic deformation in InSAR imagery</span>
+                  <div class="pub-meta">R Popescu, <u>N Anantrasirichai</u>, J Biggs. <em>Earth and Space Science</em>. 2025</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024EA003892" target="_blank">PDF</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 90'><rect width='120' height='90' fill='%23f5f5f5'/><rect x='28' y='14' width='64' height='62' fill='white' stroke='%23d0d0d0'/><line x1='35' y1='27' x2='85' y2='27' stroke='%23dcdcdc'/><line x1='35' y1='37' x2='85' y2='37' stroke='%23dcdcdc'/><line x1='35' y1='47' x2='78' y2='47' stroke='%23dcdcdc'/><line x1='35' y1='57' x2='82' y2='57' stroke='%23dcdcdc'/><line x1='35' y1='67' x2='70' y2='67' stroke='%23dcdcdc'/></svg>" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">Feature Denoising For Low-Light Instance Segmentation Using Weighted Non-Local Blocks</span>
+                  <div class="pub-meta">J Lin, <u>N Anantrasirichai</u>, D Bull. <em>IEEE International Conference on Acoustics, Speech and Signal Processing</em>. 2025</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://arxiv.org/pdf/2402.18307" target="_blank">PDF</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 90'><rect width='120' height='90' fill='%23f5f5f5'/><rect x='28' y='14' width='64' height='62' fill='white' stroke='%23d0d0d0'/><line x1='35' y1='27' x2='85' y2='27' stroke='%23dcdcdc'/><line x1='35' y1='37' x2='85' y2='37' stroke='%23dcdcdc'/><line x1='35' y1='47' x2='78' y2='47' stroke='%23dcdcdc'/><line x1='35' y1='57' x2='82' y2='57' stroke='%23dcdcdc'/><line x1='35' y1='67' x2='70' y2='67' stroke='%23dcdcdc'/></svg>" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">UW-GS: Distractor-Aware 3D Gaussian Splatting for Enhanced Underwater Scene Reconstruction</span>
+                  <div class="pub-meta">H Wang, <u>N Anantrasirichai</u>, F Zhang, D Bull. <em>IEEE/CVF Winter Conference on Applications of Computer Vision</em>. 2025</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://arxiv.org/pdf/2410.01517" target="_blank">PDF</a>
+                    <a class="pub-link code" href="https://github.com/WangHaoran16/UW-GS/tree/master" target="_blank">Code</a>
+                    <a class="pub-link proj" href="https://pui-nantheera.github.io/research/CIC/MyUnderwaterWorld.html" target="_blank">Project</a>
+                  </div>
+                </div>
+              </li>
+      <li class="pub-item"><img class="pub-thumb" loading="lazy" src="thumbnails/Cinematography.jpg" alt=""><div class="pub-content">
+        <span class="pub-title">Reviewing Intelligent Cinematography: AI Research for Camera-based Video Production</span>
+        <div class="pub-meta">A Azzarelli, <u>N Anantrasirichai</u>, DR Bull. <em>Artificial Intelligence Review</em>. 2025</div>
+        <div class="pub-links"><a class="pub-link pdf" href="https://link.springer.com/article/10.1007/s10462-024-11089-3" target="_blank">PDF</a></div>
+      </div></li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 90'><rect width='120' height='90' fill='%23f5f5f5'/><rect x='28' y='14' width='64' height='62' fill='white' stroke='%23d0d0d0'/><line x1='35' y1='27' x2='85' y2='27' stroke='%23dcdcdc'/><line x1='35' y1='37' x2='85' y2='37' stroke='%23dcdcdc'/><line x1='35' y1='47' x2='78' y2='47' stroke='%23dcdcdc'/><line x1='35' y1='57' x2='82' y2='57' stroke='%23dcdcdc'/><line x1='35' y1='67' x2='70' y2='67' stroke='%23dcdcdc'/></svg>" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">TaGAT: Topology-Aware Graph Attention Network For Multi-modal Retinal Image Fusion</span>
+                  <div class="pub-meta">X Tian, <u>N Anantrasirichai</u>, L Nicholson, A Achim. <em>Medical Image Computing and Computer Assisted Intervention</em>. 2024</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://arxiv.org/pdf/2407.14188" target="_blank">PDF</a>
+                    <a class="pub-link code" href="https://github.com/xintian-99/TaGAT" target="_blank">Code</a>
+                    <a class="pub-link data" href="https://data.bris.ac.uk/data/dataset/1hvd8aw0g6l6g28fnub18hgse4" target="_blank">Dataset</a>
+                    <a class="pub-link proj" href="https://pui-nantheera.github.io/research/MedImages/RetinalImages.html" target="_blank">Project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 90'><rect width='120' height='90' fill='%23f5f5f5'/><rect x='28' y='14' width='64' height='62' fill='white' stroke='%23d0d0d0'/><line x1='35' y1='27' x2='85' y2='27' stroke='%23dcdcdc'/><line x1='35' y1='37' x2='85' y2='37' stroke='%23dcdcdc'/><line x1='35' y1='47' x2='78' y2='47' stroke='%23dcdcdc'/><line x1='35' y1='57' x2='82' y2='57' stroke='%23dcdcdc'/><line x1='35' y1='67' x2='70' y2='67' stroke='%23dcdcdc'/></svg>" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">Parasitic Egg Detection and Classification in Low-cost Microscopic Images using Transfer Learning</span>
+                  <div class="pub-meta">T Suwannaphong, S Chavana, S Tongsom, D Palasuwan, TH Chalidabhongse, <u>N Anantrasirichai</u>. <em>SN Computer Science</em>. 2023</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://link.springer.com/article/10.1007/s42979-023-02406-8" target="_blank">PDF</a>
+                    <a class="pub-link data" href="https://zenodo.org/records/10437395" target="_blank">Dataset</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item">
+                <img class="pub-thumb" loading="lazy" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 90'><rect width='120' height='90' fill='%23f5f5f5'/><rect x='28' y='14' width='64' height='62' fill='white' stroke='%23d0d0d0'/><line x1='35' y1='27' x2='85' y2='27' stroke='%23dcdcdc'/><line x1='35' y1='37' x2='85' y2='37' stroke='%23dcdcdc'/><line x1='35' y1='47' x2='78' y2='47' stroke='%23dcdcdc'/><line x1='35' y1='57' x2='82' y2='57' stroke='%23dcdcdc'/><line x1='35' y1='67' x2='70' y2='67' stroke='%23dcdcdc'/></svg>" alt="">
+                <div class="pub-content">
+                  <span class="pub-title">Detecting Ground Deformation in the Built Environment using Sparse Satellite InSAR data with a Convolutional Neural Network</span>
+                  <div class="pub-meta"><u>N Anantrasirichai</u>, J Biggs, K Kelevitz, Z Sadeghi, T Wright, J Thompson, A Achim, D Bull. <em>IEEE Transactions on Geoscience and Remote Sensing</em>. 2020</div>
+                  <div class="pub-links">
+                    <a class="pub-link pdf" href="https://arxiv.org/pdf/2005.03221.pdf" target="_blank">PDF</a>
+                    <a class="pub-link proj" href="https://pui-nantheera.github.io/research/NERC/ground_deformation.html" target="_blank">Project</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item" data-tags="insar journal"><img class="pub-thumb" loading="lazy" src="thumbnails/Volcano.jpg" alt=""><div class="pub-content">
+        <span class="pub-title">A Deep Learning Approach to Detecting Volcano Deformation from Satellite Imagery using Synthetic Datasets</span>
+        <div class="pub-meta"><u>N Anantrasirichai</u>, J Biggs, F Albino, D Bull. <em>Remote Sensing of Environment</em>. 2019</div>
+        <div class="pub-links"><a class="pub-link pdf" href="https://www.sciencedirect.com/science/article/abs/pii/S003442571930183X" target="_blank">PDF</a><a class="pub-link arxiv" href="https://arxiv.org/abs/1905.07286" target="_blank">arXiv</a><a class="pub-link code" href="https://github.com/pui-nantheera/volcano_deform_detection" target="_blank">Code</a><a class="pub-link proj" href="https://seis.bristol.ac.uk/~eexna/research/volcanicUnrest.html" target="_blank">Project</a></div>
+      </div></li>
             </ul>
           </div>
           <div class="line_sep"></div>
