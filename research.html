@@ -19,6 +19,66 @@
     <meta name="twitter:description" content="I am an Associate Professor in Visual Computing at the University of Bristol. Here's a showcase of my research.">
     <meta name="twitter:image" content="https://pui-nantheera.github.io/card_social.jpg">
 
+    <style>
+      body { background-color: #FFF; }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 40px 48px 32px;
+        border-bottom: 1px solid #ddd;
+        flex-wrap: wrap;
+      }
+      header img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
+      .header-text h1 { font-size: 2rem; font-weight: bold; }
+      .header-text h3 { font-size: 1.5rem; font-weight: bold; }
+      .header-text p  { font-size: 1rem; color: #555; margin-top: 2px; }
+      .research-item {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+        padding: 18px 0;
+      }
+      .research-item + .research-item {
+        border-top: 1px solid #eee;
+      }
+      .research-thumb {
+        flex: 0 0 240px;
+        max-width: 240px;
+      }
+      .research-thumb img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        display: block;
+      }
+      .research-thumb .data-link {
+        display: block;
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+      }
+      .research-desc {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+      .research-desc h4 {
+        margin-top: 0;
+      }
+      .research-desc p:last-child {
+        margin-bottom: 0;
+      }
+      @media (max-width: 640px) {
+        .research-item {
+          flex-direction: column;
+          gap: 12px;
+        }
+        .research-thumb {
+          flex-basis: auto;
+          max-width: 260px;
+        }
+      }
+    </style>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XM2FWS366V"></script>
     <script>
@@ -33,182 +93,210 @@
   <body id="page-top">
     <div class="page-container">
       <div class="inner">
-        <div class="container">
-          <div class="row">
-            <div class="row vertical-align">
-              <div class="col-md-3">
-                <div class="title">
-                  <p><a href="index.html"><img src="pui_v2.jpg" width="100%" height="20%" class="center" /></a></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="title">
-                  <h1>Dr Nantheera Anantrasirichai <span style="color: #06837e;">(Pui)</span></h1> 
-                  <h5>Associate Professor in Visual Computing</h5>
-                  <p>3.20, Merchant Venturers Building, University of Bristol</p>
-                  <p>Bristol, BS8 1UB, UK</p>
-                  <pre>eexna*at*bris.ac.uk</pre>
-                  <ul class="list-inline list-social-icons mb-0">
-                    <li class="list-inline-item">
-                      <a href="https://scholar.google.com/citations?user=40VEYswAAAAJ&hl=en" target="_blank">
-                        <span class="fa-3x">
-                            <i class="ai ai-google-scholar-square"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://twitter.com/puinantheera" target="_blank">
-                        <span class="fa-3x">
-                          <i class="fab fa-twitter-square"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://uk.linkedin.com/in/nantheera-anantrasirichai-389243107/" target="_blank">
-                        <span class="fa-3x">
-                            <i class="fab fa-linkedin"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://github.com/pui-nantheera">
-                        <span class="fa-3x">
-                            <i class="fab fa-github-square"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://research-information.bris.ac.uk/en/persons/n-anantrasirichai">
-                        <span class="fa-3x">
-                            <i class="ai ai-cv-square"></i>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <p><a href='https://www.bristol.ac.uk' target="_blank"><img src="uob-logo.svg" width="100%" height="20%" alt=""></a></p>
-                <p><a href='https://www.bristol.ac.uk/vision-institute' target="_blank"><img src="BVI_colour.svg" width="100%" height="20%" alt=""></a></p>
-                <p><a href='https://vilab.blogs.bristol.ac.uk' target="_blank"><img src="VIL_logo.svg" width="100%" height="20%" alt=""></a></p>
-              </div>
-            </div>
+        <header>
+          <a href="https://pui-nantheera.github.io/index.html">
+            <img src="https://pui-nantheera.github.io/pui_v2.jpg" alt="Pui">
+          </a>
+          <div class="header-text">
+            <h1>Dr Nantheera Anantrasirichai (Pui)</h1>
+            <h3 style="margin-top:10px;">Associate Professor in Visual Computing</h3>
+            <p style="margin-top:5px;">3.20, Merchant Venturers Building, University of Bristol, BS8 1UB, UK</p>
           </div>
-        </div>
+        </header>
+
+
         
-        
-        <hr />
         <div class="container-md">
 
           <div class="publicationlist">
-            <h2>Ongoing Research Projects</h2>
+            <h2 style="margin-top:15px;">Ongoing Research Projects</h2>
 
             <div class="researchlist">
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <img src="img/SITUS.jpg" alt="">
+                </div>
+                <div class="research-desc">
+                  <h4><a href="">From Scan to Insight: Explainable AI for Safer and Smarter Thoracic Ultrasound in Pleural Disease (SITUS)</a></h4>
+                  <p>Pleural effusion, the build-up of fluid around the lungs, affects millions of people worldwide and is commonly associated with conditions such as cancer, heart failure, and lung disease. Thoracic ultrasound (TUS) is the primary tool for diagnosis and treatment guidance, but interpreting scans requires significant expertise. The SITUS project brings together lung specialists and AI researchers to develop a reliable and transparent AI system for thoracic ultrasound interpretation. Designed for real clinical settings, the system aims to support doctors in making more informed decisions and improving patient care.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <img src="img/VIVO.jpg" alt="">
+                </div>
+                <div class="research-desc">
+                  <h4><a href="">Com4D: Compressed 4D Representations for Dynamic Scenes</a></h4>
+                  <p>The world is dynamic, yet most visual capture and representation systems are designed for static scenes. While recent advances in 3D reconstruction have been highly successful, efficiently representing and transmitting dynamic 3D content (4D) remains a major challenge due to motion, sparse viewpoints, and large data volumes. This project combines the University of Bristol’s expertise in challenging-scene 3D reconstruction with the video compression expertise of National Chung Cheng University (NCCU) and National Yang Ming Chiao Tung University (NYCU). Together, we will develop efficient methods to capture, compress, and transmit dynamic 3D scenes while reducing storage and bandwidth requirements.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <img src="img/myworld_phd_promo1.jpg" alt="">
+                </div>
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/CIC/PriorPool.html">PriorPool: Intelligent Video Restoration and Enhancement via a Large Prior Database</a></h4>
+                  <p>Acquiring high-quality video in challenging conditions, such as low light, heat haze, or adverse weather—is difficult, often resulting in degraded footage that hinders both human and machine interpretation. PriorPool addresses this by leveraging priors from high-quality videos with similar content to guide restoration and enhancement. The project develops an unsupervised framework that tackles blind inverse problems, combining robust content representations, prior retrieval, and context-aware optimisation. By exploiting the knowledge embedded in high-quality videos, PriorPool aims to overcome information loss and the lack of ground truth, enabling more accurate and effective video restoration.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <a class="data-link" href="https://ieee-dataport.org/open-access/bvi-lowlight-fully-registered-datasets-low-light-image-and-video-enhancement" target="_blank">BVI-Lowlight datasets</a>
+                  <a href="https://ieee-dataport.org/open-access/bvi-lowlight-fully-registered-datasets-low-light-image-and-video-enhancement"><img src="img/bvi-lowlight.jpg" alt=""></a>
+                </div>
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/CIC/low_light_image_enhancement.html">AI based production workflows for Challenging Acquisition Environments</a></h4>
+                  <p>Natural history and other challenging filming environments place extreme demands on camera systems and post-production workflows. Low-light and high-resolution video are particularly susceptible to noise and other distortions, creating a gap between production requirements and hardware capabilities. Effective distortion management is therefore essential, motivating perceptually driven solutions for <a href="https://pui-nantheera.github.io/research/CIC/colorization_denoising.html">video denoising, colorization and contrast enhancement</a>.
+Despite recent advances in machine learning, most research focuses on still images, with relatively limited work and few datasets available for video denoising. This project forms part of <a href="https://www.myworld-creates.com/">MyWorld</a>.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <img src="img/3Dunderwater.jpg" alt="">
+                </div>
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/CIC/MyUnderwaterWorld.html">MyUnderwaterWorld: Intelligent Underwater Scene Representation</a></h4>
+                  <p>Underwater environment represents the combination of several challenges. Water is a dynamic medium and suspended particles move. Light scatter causes blur and halo effects, whilst light absorption leads to colour distortion and reduced contrast. The model of underwater imagery should thus comprise temporally- and spatially-variant distortion, uneven intensity bias, multiplicative noise, and additive noise. This project aims to exploit underwater image priors to perform 3D mapping process can be done directly from the raw underwater sequences.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <img src="img/DeepCLEAR.jpg" alt="">
+                </div>
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/CIC/MyUnderwaterWorld.html">DeepCLEAR: Intelligent Atmospheric Turbulence Removal and Object Recognition</a></h4>
+                  <p>Atmospheric turbulence distorts visual imagery, hindering scene interpretation by both humans and machines. Traditional model-based methods, such as <a href="https://pui-nantheera.github.io/research/Heathaze/CLEAR.html">CLEAR</a>, are computationally expensive and unsuitable for real-time operation. While deep learning approaches have shown promise, they are largely limited to static scenes. This project proposes novel learning-based frameworks for atmospheric turbulence mitigation in dynamic scenes. Our objectives are to (i) develop real-time video restoration techniques that reduce spatio-temporal distortions and improve visual interpretation, and (ii) enable real-time object recognition and tracking on restored video to support decision-making.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <img src="img/volcanoresult.png" alt="">
+                </div>
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/NERC/volcano_deformation.html">Automated Alert System for Volcanic Unrest</a></h4>
+                  <p>Satellite radar (InSAR) can be employed to observe volcanic ground deformation, which has shown a significant statistical link to eruptions. The explosion in data has however brought major challenges associated with timely dissemination of information and distinguishing volcano deformation patterns from noise, which currently relies on manual inspection. Here, we present a novel approach to detect volcanic ground deformation automatically from InSAR images.</p>
+                </div>
+              </div>
+
               
-              <div class="line_sep"></div>
-              <h4><a href="https://pui-nantheera.github.io/research/CIC/PriorPool.html">PriorPool: Intelligent Video Restoration and Enhancement via a Large Prior Database</a></h4>
-                    <p>Acquiring high-quality video in challenging conditions, such as low light, heat haze, or adverse weather—is difficult, often resulting in degraded footage that hinders both human and machine interpretation. PriorPool addresses this by leveraging priors from high-quality videos with similar content to guide restoration and enhancement. The project develops an unsupervised framework that tackles blind inverse problems, combining robust content representations, prior retrieval, and context-aware optimisation. By exploiting the knowledge embedded in high-quality videos, PriorPool aims to overcome information loss and the lack of ground truth, enabling more accurate and effective video restoration.</p>
-
-              <h4><a href="https://pui-nantheera.github.io/research/CIC/low_light_image_enhancement.html"> AI based production workflows for Challenging Acquisition Environments</a></h4>
-              <div class="row"><p>
-                <div class="col-sm-7">Genres such as natural history place extreme demands on camera technologies and post production due to their challenging acquisition conditions. Distortions are particularly endemic in <a href="https://pui-nantheera.github.io/research/CIC/low_light_image_enhancement.html">low-light video</a> due to the interactions between lens aperture, shutter angle and ISO (sensor gain) setting. 
-This is compounded for higher spatial resolutions where increased sensor density leads to higher chrominance noise and cross-talk. 
-There remains a significant gap between the demands of commissioners and the capability of acquisition hardware. Distortion management is thus essential in any production workflow and there is a need for perceptually inspired solutions to a class of inverse problems associated with video production: <a href="https://pui-nantheera.github.io/research/CIC/colorization_denoising.html">denoising, colorization and contrast enhancement</a>.
-Current systems do not fully exploit the potential of recent advances in machine learning and most academic solutions focus on still images only; relatively little work has been reported on video denoising and very few video denoising datasets exist. This project is part of <a href="https://www.myworld-creates.com/">MyWorld</a>.</div>
-<div class="col-sm-5"><a href="https://ieee-dataport.org/open-access/bvi-lowlight-fully-registered-datasets-low-light-image-and-video-enhancement" target="_black">BVI-Lowlight datasets</a> 
-                    <a href='https://ieee-dataport.org/open-access/bvi-lowlight-fully-registered-datasets-low-light-image-and-video-enhancement'><img src="img/bvi-lowlight.jpg" width="100%" alt=""></a></div>
-                    </div>
-                    </p>
-                    <div class="line_sep"></div>
-                <h4><a href="https://pui-nantheera.github.io/research/CIC/MyUnderwaterWorld.html">MyUnderwaterWorld: Intelligent Underwater Scene Representation</a></h4>
-                <div class="row">
-                    <p><div class="col-sm-8">Underwater environment represents the combination of several challenges. Water is a dynamic medium and suspended particles move. Light scatter causes blur and halo effects, whilst light absorption leads to colour distortion and reduced contrast. The model of underwater imagery should thus comprise temporally- and spatially-variant distortion, uneven intensity bias, multiplicative noise, and additive noise. This project aims to exploit underwater image priors to perform 3D mapping process can be done directly from the raw underwater sequences. </div>
-  <div class="col-sm-4"><img src="img/3Dunderwater.jpg" width="55%" /></div>
-  </div></p>
-
-                <h4><a href="https://pui-nantheera.github.io/research/NERC/volcano_deformation.html">Automated Alert System for Volcanic Unrest</a></h4>
-                <div class="row"><p>
-  <div class="col-sm-8">Satellite radar (InSAR) can be employed to observe volcanic ground deformation, which has shown a significant statistical link to eruptions. The explosion in data has however brought major challenges associated with timely dissemination of information and distinguishing volcano deformation patterns from noise, which currently relies on manual inspection. Here, we present a novel approach to detect volcanic ground deformation automatically from InSAR images.</div>
-  <div class="col-sm-4"><img src="img/volcanoresult.png" width="90%" /></div>
-  </div>
-                    </p>
-                    <div class="line_sep"></div>
-                    <h4><a href="https://pui-nantheera.github.io/research/Heathaze/CLEAR.html">Mitigating Atmospheric Distortion</a></h4>
-                <div class="row"><p>
-  <div class="col-sm-7">The project has proposed a novel method for mitigating the effects of atmospheric distortion on observed images, particularly airborne turbulence which can severely degrade a region of interest (ROI). In order to extract accurate detail about objects behind the distorting layer, a simple and efficient frame selection method is proposed, while the space-varying distortion problem is solved using region-level fusion based on the <a class="hidenlink" href="http://www-sigproc.eng.cam.ac.uk/~ngk/"  target="_blank">Dual Tree Complex Wavelet Transform (DT-CWT)</a>.</div>
-  <div class="col-sm-5"><img src="img/CLEARresult.png" width="90%" /></div>
-  </div>
-                    </p>
-                    
-
-                    <h4><a href="https://pui-nantheera.github.io/research/MedImages/BLines.html">B-Line Quantification in Lung Ultrasound Images</a></h4>
-                <div class="row"><p>
-  <div class="col-sm-7">B-lines, defined as discrete laser-like vertical hyperechoic reverberation
-                      artefacts in lung ultrasounds, have been shown to
-                      correlate with extravascular lung water in adults and children on dialysis.
-                      This project developed a novel automatic B-line
-                      detection via an inverse problem involving the Radon transform.</div>
-  <div class="col-sm-4"><img src="img/LUSresults.png" width="100%" /></div>
-  </div>
-                    </p>
-                    <div class="line_sep"></div>
-                    <h4><a href="https://seis.bristol.ac.uk/~eexna\research\OCTimaging.html">Computer Assisted Analysis of Ocular Imaging</a></h4>
-                    <p>The project developed an image enhancement method for retinal optical coherence tomography (OCT) images. The OCT is a non-invasive technique that produces cross-sectional imagery of ocular tissue. These images contain a large amount of speckle causing them to be grainy and of very low contrast. The OCT speckle originates mainly from multiple forward scattering and thus also contains some information about tissue composition, which can be useful in diagnosis. The project also analysed texture in the OCT image layers for retinal disease glaucoma. Methodology for classification and feature extraction based on robust principle component analysis of texture descriptors was established. In addition, the technique using multi-modal information fusion which incorporates data from visual field measurements with OCT and retinal photography was developed.</p>
-
-            <hr />
-          <div class="publicationlist">
-            <h2>Finished Research Projects</h2>
-            <div class="line_sep"></div>
-                    <h4><a href="https://pui-nantheera.github.io/research/Microscopy/RBC.html">Deep Learning for Computational Microscopy</a></h4>
-                <div class="row"><p>
-  <div class="col-sm-7">Collaborating with Chulalongkorn University, Thailand, we are developing AI-based tools for microscopic imaging. Abnormal red blood cells and parasitic eggs are detected and their types are classified. These two are ones of the most causes of diseases in low and middle-income countries.</div>
-  <div class="col-sm-4"><a href="https://ieee-dataport.org/competitions/parasitic-egg-detection-and-classification-microscopic-images"><img src="img/ParasiticEgg.png" width="100%" /></div>
-  </div>
-                    </p>
-                    <div class="line_sep"></div>
-                    <h4><a href="https://pui-nantheera.github.io/research/NERC/ground_deformation.html">Dynamic Ground Motion Map of the UK</a></h4>
-                    <p>The project explores how dynamic ground motion maps could be integrated into a Digital Environment through combination with other digital infrastructure and the use of environment-focussed informatics for data handling, feature extraction, data fusion, and decision making.</p>
-                    
-                    <div class="line_sep"></div>
-                    <h4><a href="https://pui-nantheera.github.io/research/Palantir/depth_estimation.html">Palantir - Fast Depth Estimation for View Synthesis</a></h4>
-                    <p>Disparity/depth estimation from sequences of stereo
-images is an important element in 3D vision. Owing to occlusions, imperfect settings and homogeneous luminance, accurate
-estimate of depth remains a challenging problem. Targetting view
-synthesis, we propose a novel learning-based framework making use of dilated convolution, densely connected convolutional
-modules, compact decoder and skip connections. </p>
-                    <div class="line_sep"></div>
-                <h4><a href="https://seis.bristol.ac.uk/~eexna\research\Palantir.html">Palantir - Real Time Inspection and Assessment of Wind Turbine Blade Health</a></h4>
-                    <p>A major challenge that faces the wind turbine industry is to collect and collate the large amounts of inspection data from wind turbine blades that comes from different inspection technologies and different inspection providers. Current techniques are expensive and results are not typically known for weeks or months until after the inspection. The Palantir project will increase the capability to undertake required inspections remotely. The key innovation will be the development of a permanently installed monitoring system for wind turbine blades providing real time continuous monitoring. This system will incorporate automated analysis of the data and therefore provide near real time status of blade health.</p>
-                    <div class="line_sep"></div>
-                <h4><a href="https://seis.bristol.ac.uk/~eexna\research\biovisualframework.html">Bio-inspired Visual Framework for Autonomous Locomotion</a></h4>
-                    <p>Vision provides us information that can be used for adaptively controlling our locomotion. However,
-                      we still do not fully understand how humans perceive and use it in a dynamic environment.
-                      This implies that information from visual sensors, e.g. cameras, has not yet been
-                      fully employed in autonomous systems. This project will study human eye movement during
-                      locomotion using a mobile eye tracker, leading to a better understanding of human perception
-                      and what low-level features drive decisions.</p>
-                    <div class="line_sep"></div>
-                
-                <h4><a href="https://seis.bristol.ac.uk/~eexna\research\terrainTexture.html">Terrain Analysis for Robotics</a></h4>
-                    <p>The project aims to investigate the use of artificial visual perception for the control of locomotion in legged robot. The knowledge of the way humans use vision to control locomotion is translated to the engineering disciplines of machine and robotics. The terrain type and geometry are assessed and predicted using image based sensors. The proposed methods involve texture-based image analysis using local frequency characteristics on images and videos and a novel wavelet-based descriptor to identify terrain types, classify materials and surface orientation.</p>
-                    <div class="line_sep"></div>
-                
-                
-                <h4><a href="https://seis.bristol.ac.uk/~eexna\research\ruralservice.html">Rural/Distributed Services and Applications</a></h4>
-                    <p>The project is part of the first theme of the <a class="hidenlink" href="http://www.iu-atc.com"  target="_blank">India-UK Advanced Technology Centre of Excellence in Next Generation Networks, Systems and Services (IU-ATC)</a>. The project has focused on the novel applications to meet the requirements in rural India.</p>
-                    <div class="line_sep"></div>
-                <h4><a href="https://seis.bristol.ac.uk/~eexna\research\MEDIEVaL.html">Multiview Distributed Video Coding For Wireless Multicamera Networks</a></h4>
-                    <p>Distributed video coding (DVC) has recently received considerable interest as it allows shifting the complexity from the encoder to the decoder making it a attractive approach for low power systems with multiple remotely located multimedia sensor networks. The project has proposed the use of Hybrid Key/Wyner-Ziv frames (KWZ) with block-based concealment. Enhancement techniques, e.g. spatio-temporal interleaving, multi-hypothesis coding, bit-plane projection and etc., have been introduced to achieve compression efficiency. Scalabilities and surveillance have also been developed in the project.</p>
-                    <div class="line_sep"></div>
-                <h4><a href="https://seis.bristol.ac.uk/~eexna\research\multiview.html">Multi-view Image Compression and View Synthesis</a></h4>
-                    <p>The project solved one of the key challenges for all multimedia network service providers which is efficient and effective multi-view video distribution across heterogeneous networks. Significant advances have been achieved in developing embedded image and video coding schemes based on wavelets, producing excellent rate-distortion performance and scalable functionality with unpredictable channel variations.</p>
 
             </div>
           </div>
+
+          <hr />
+
+          <div class="publicationlist">
+            <h2>Finished Research Projects</h2>
+
+            <div class="researchlist">
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <a href="https://ieee-dataport.org/competitions/parasitic-egg-detection-and-classification-microscopic-images"><img src="img/ParasiticEgg.png" alt=""></a>
+                </div>
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/Microscopy/RBC.html">Deep Learning for Computational Microscopy</a></h4>
+                  <p>Collaborating with Chulalongkorn University, Thailand, we are developing AI-based tools for microscopic imaging. Abnormal red blood cells and parasitic eggs are detected and their types are classified. These two are ones of the most causes of diseases in low and middle-income countries.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <img src="img/LUSresults.png" alt="">
+                </div>
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/MedImages/BLines.html">B-Line Quantification in Lung Ultrasound Images</a></h4>
+                  <p>B-lines, defined as discrete laser-like vertical hyperechoic reverberation artefacts in lung ultrasounds, have been shown to correlate with extravascular lung water in adults and children on dialysis. This project developed a novel automatic B-line detection via an inverse problem involving the Radon transform.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://seis.bristol.ac.uk/~eexna\research\OCTimaging.html">Computer Assisted Analysis of Ocular Imaging</a></h4>
+                  <p>The project developed an image enhancement method for retinal optical coherence tomography (OCT) images. The OCT is a non-invasive technique that produces cross-sectional imagery of ocular tissue. These images contain a large amount of speckle causing them to be grainy and of very low contrast. The OCT speckle originates mainly from multiple forward scattering and thus also contains some information about tissue composition, which can be useful in diagnosis. The project also analysed texture in the OCT image layers for retinal disease glaucoma. Methodology for classification and feature extraction based on robust principle component analysis of texture descriptors was established. In addition, the technique using multi-modal information fusion which incorporates data from visual field measurements with OCT and retinal photography was developed.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-thumb">
+                  <img src="img/CLEARresult.png" alt="">
+                </div>
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/Heathaze/CLEAR.html">Mitigating Atmospheric Distortion</a></h4>
+                  <p>The project has proposed a novel method for mitigating the effects of atmospheric distortion on observed images, particularly airborne turbulence which can severely degrade a region of interest (ROI). In order to extract accurate detail about objects behind the distorting layer, a simple and efficient frame selection method is proposed, while the space-varying distortion problem is solved using region-level fusion based on the <a class="hidenlink" href="http://www-sigproc.eng.cam.ac.uk/~ngk/" target="_blank">Dual Tree Complex Wavelet Transform (DT-CWT)</a>.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/NERC/ground_deformation.html">Dynamic Ground Motion Map of the UK</a></h4>
+                  <p>The project explores how dynamic ground motion maps could be integrated into a Digital Environment through combination with other digital infrastructure and the use of environment-focussed informatics for data handling, feature extraction, data fusion, and decision making.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://pui-nantheera.github.io/research/Palantir/depth_estimation.html">Palantir - Fast Depth Estimation for View Synthesis</a></h4>
+                  <p>Disparity/depth estimation from sequences of stereo images is an important element in 3D vision. Owing to occlusions, imperfect settings and homogeneous luminance, accurate estimate of depth remains a challenging problem. Targetting view synthesis, we propose a novel learning-based framework making use of dilated convolution, densely connected convolutional modules, compact decoder and skip connections.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://seis.bristol.ac.uk/~eexna\research\Palantir.html">Palantir - Real Time Inspection and Assessment of Wind Turbine Blade Health</a></h4>
+                  <p>A major challenge that faces the wind turbine industry is to collect and collate the large amounts of inspection data from wind turbine blades that comes from different inspection technologies and different inspection providers. Current techniques are expensive and results are not typically known for weeks or months until after the inspection. The Palantir project will increase the capability to undertake required inspections remotely. The key innovation will be the development of a permanently installed monitoring system for wind turbine blades providing real time continuous monitoring. This system will incorporate automated analysis of the data and therefore provide near real time status of blade health.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://seis.bristol.ac.uk/~eexna\research\biovisualframework.html">Bio-inspired Visual Framework for Autonomous Locomotion</a></h4>
+                  <p>Vision provides us information that can be used for adaptively controlling our locomotion. However, we still do not fully understand how humans perceive and use it in a dynamic environment. This implies that information from visual sensors, e.g. cameras, has not yet been fully employed in autonomous systems. This project will study human eye movement during locomotion using a mobile eye tracker, leading to a better understanding of human perception and what low-level features drive decisions.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://seis.bristol.ac.uk/~eexna\research\terrainTexture.html">Terrain Analysis for Robotics</a></h4>
+                  <p>The project aims to investigate the use of artificial visual perception for the control of locomotion in legged robot. The knowledge of the way humans use vision to control locomotion is translated to the engineering disciplines of machine and robotics. The terrain type and geometry are assessed and predicted using image based sensors. The proposed methods involve texture-based image analysis using local frequency characteristics on images and videos and a novel wavelet-based descriptor to identify terrain types, classify materials and surface orientation.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://seis.bristol.ac.uk/~eexna\research\ruralservice.html">Rural/Distributed Services and Applications</a></h4>
+                  <p>The project is part of the first theme of the <a class="hidenlink" href="http://www.iu-atc.com" target="_blank">India-UK Advanced Technology Centre of Excellence in Next Generation Networks, Systems and Services (IU-ATC)</a>. The project has focused on the novel applications to meet the requirements in rural India.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://seis.bristol.ac.uk/~eexna\research\MEDIEVaL.html">Multiview Distributed Video Coding For Wireless Multicamera Networks</a></h4>
+                  <p>Distributed video coding (DVC) has recently received considerable interest as it allows shifting the complexity from the encoder to the decoder making it a attractive approach for low power systems with multiple remotely located multimedia sensor networks. The project has proposed the use of Hybrid Key/Wyner-Ziv frames (KWZ) with block-based concealment. Enhancement techniques, e.g. spatio-temporal interleaving, multi-hypothesis coding, bit-plane projection and etc., have been introduced to achieve compression efficiency. Scalabilities and surveillance have also been developed in the project.</p>
+                </div>
+              </div>
+
+              <div class="research-item">
+                <div class="research-desc">
+                  <h4><a href="https://seis.bristol.ac.uk/~eexna\research\multiview.html">Multi-view Image Compression and View Synthesis</a></h4>
+                  <p>The project solved one of the key challenges for all multimedia network service providers which is efficient and effective multi-view video distribution across heterogeneous networks. Significant advances have been achieved in developing embedded image and video coding schemes based on wavelets, producing excellent rate-distortion performance and scalable functionality with unpredictable channel variations.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         <hr />
        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-square-fill" fill=#222 xmlns="http://www.w3.org/2000/svg"><a href="index.html">
         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/></a>
-      </svg>
+       </svg>
       </div>
     </div>
   </body>
