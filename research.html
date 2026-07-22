@@ -22,17 +22,6 @@
     <style>
       body { background-color: #FFF; }
       hr.section-rule { border: 0; border-top: 2px solid #06837e; margin: 24px 0; }
-      header {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        padding: 40px 48px 32px;
-        flex-wrap: wrap;
-      }
-      header img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
-      .header-text h1 { font-size: 2rem; font-weight: bold; }
-      .header-text h3 { font-size: 1.5rem; font-weight: bold; }
-      .header-text p  { font-size: 1rem; color: #555; margin-top: 2px; }
       .research-item {
         display: flex;
         gap: 24px;
@@ -93,22 +82,79 @@
   <body id="page-top">
     <div class="page-container">
       <div class="inner">
-        <header>
-          <a href="https://pui-nantheera.github.io/index.html">
-            <img src="https://pui-nantheera.github.io/pui_v2.jpg" alt="Pui">
-          </a>
-          <div class="header-text">
-            <h1>Dr Nantheera Anantrasirichai (Pui)</h1>
-            <h3 style="margin-top:10px;">Associate Professor in Visual Computing</h3>
-            <p style="margin-top:5px;">3.20, Merchant Venturers Building, University of Bristol, BS8 1UB, UK</p>
+        <div class="container site-header">
+          <div class="row">
+            <div class="row vertical-align">
+              <div class="col-md-3">
+                <div class="title">
+                  <p><a href="index.html"><img src="pui_v2.jpg" width="100%" height="20%" class="center" /></a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="title">
+                  <h1>Dr Nantheera Anantrasirichai <span style="color: #06837e;">(Pui)</span></h1>
+                  <h4>Professor of Visual Computing</h4>
+                  <p>3.20, Merchant Venturers Building, University of Bristol</p>
+                  <p>Bristol, BS8 1UB, UK</p>
+                  <pre>N.Anantrasirichai*at*bristol.ac.uk</pre>
+                  <ul class="list-inline list-social-icons mb-0">
+                    <li class="list-inline-item">
+                      <a href="https://scholar.google.com/citations?user=40VEYswAAAAJ&hl=en" target="_blank">
+                        <span class="fa-3x">
+                            <i class="ai ai-google-scholar-square"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://twitter.com/puinantheera" target="_blank">
+                        <span class="fa-3x">
+                          <i class="fab fa-twitter-square"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://uk.linkedin.com/in/nantheera-anantrasirichai-389243107/" target="_blank">
+                        <span class="fa-3x">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://github.com/pui-nantheera">
+                        <span class="fa-3x">
+                            <i class="fab fa-github-square"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://research-information.bris.ac.uk/en/persons/n-anantrasirichai">
+                        <span class="fa-3x">
+                            <i class="ai ai-cv-square"></i>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <p><a href='https://www.bristol.ac.uk' target="_blank"><img src="uob-logo.svg" width="100%" height="20%" alt=""></a></p>
+                <p><a href='https://www.bristol.ac.uk/vision-institute' target="_blank"><img src="BVI_colour.svg" width="100%" height="20%" alt=""></a></p>
+                <p><a href='https://vilab.blogs.bristol.ac.uk' target="_blank"><img src="VIL_logo.svg" width="100%" height="20%" alt=""></a></p>
+              </div>
+            </div>
           </div>
-        </header>
-
-
-        
+        </div>
         <div class="container-md">
-
-          <hr class="section-rule" />
+          <ul class="tab-menu" style="justify-content: flex-end;">
+            <li><a href="index.html">About</a></li>
+            <li><a href="people.html">People</a></li>
+            <li class="active"><a href="research.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="activities.html">News</a></li>
+            <li><a href="download.html">Download</a></li>
+          </ul>
+        </div>
+        <div class="container-md">
 
           <div class="publicationlist">
             <h2 style="margin-top:15px;">Ongoing Research Projects</h2>

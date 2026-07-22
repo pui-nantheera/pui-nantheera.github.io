@@ -8,6 +8,11 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://pui-nantheera.github.io/">
 <title>Pui's Publications</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<link rel="stylesheet" href="./css/style.css">
 <style>
   :root {
     --link-pdf: #CE7B69;
@@ -20,32 +25,13 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
+  main {
+    padding: 28px 48px 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
     color: #000;
-    background: #fff;
-    padding: 0 0 80px;
-    max-width: 960px;
-    margin: 0 auto;
   }
-
-  header {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 40px 48px 32px;
-    border-bottom: 1px solid #ddd;
-    flex-wrap: wrap;
-  }
-  header img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
-  .header-text h1 { font-size: 1.3rem; font-weight: bold; }
-  .header-text p  { font-size: 0.85rem; color: #555; margin-top: 2px; }
-  .header-logos { margin-left: auto; display: flex; gap: 16px; align-items: center; }
-  .header-logos img { height: 28px; opacity: 0.75; }
-
-  main { padding: 28px 48px 0; max-width: 960px; }
 
   .scholar-links { margin-bottom: 24px; font-size: 0.88rem; color: #555; }
   .scholar-links a { color: #0000EE; }
@@ -141,11 +127,10 @@
     vertical-align: middle;
   }
 
-  footer { padding: 28px 48px 0; font-size: 0.78rem; color: #bbb; border-top: 1px solid #ddd; margin-top: 32px; max-width: 960px; }
+  footer { padding: 28px 48px 0; font-size: 0.78rem; color: #bbb; border-top: 1px solid #ddd; margin-top: 32px; }
 
   @media (max-width: 640px) {
-    header, main, footer { padding-left: 18px; padding-right: 18px; }
-    header img { width: 52px; height: 52px; }
+    main, footer { padding-left: 18px; padding-right: 18px; }
     .year-section { grid-template-columns: 1fr; gap: 4px; }
     .year-heading { padding-top: 0; }
     .pub-item { grid-template-columns: 80px 1fr; gap: 10px; }
@@ -163,20 +148,82 @@
       gtag('config', 'G-XM2FWS366V');
     </script>
 </head>
-<body>
+<body id="page-top">
+<div class="page-container">
+<div class="inner">
 
-
-<header>
-  <a href="https://pui-nantheera.github.io/index.html">
-    <img src="https://pui-nantheera.github.io/pui_v2.jpg" alt="Pui">
-  </a>
-  <div class="header-text">
-    <h1>Dr Nantheera Anantrasirichai (Pui)</h1>
-    <h3>Associate Professor in Visual Computing</h3>
-    <p>3.20, Merchant Venturers Building, University of Bristol, BS8 1UB, UK</p>
+<div class="container site-header">
+  <div class="row">
+    <div class="row vertical-align">
+      <div class="col-md-3">
+        <div class="title">
+          <p><a href="index.html"><img src="pui_v2.jpg" width="100%" height="20%" class="center" /></a></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="title">
+          <h1>Dr Nantheera Anantrasirichai <span style="color: #06837e;">(Pui)</span></h1>
+          <h4>Professor of Visual Computing</h4>
+          <p>3.20, Merchant Venturers Building, University of Bristol</p>
+          <p>Bristol, BS8 1UB, UK</p>
+          <pre>N.Anantrasirichai*at*bristol.ac.uk</pre>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://scholar.google.com/citations?user=40VEYswAAAAJ&hl=en" target="_blank">
+                <span class="fa-3x">
+                    <i class="ai ai-google-scholar-square"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/puinantheera" target="_blank">
+                <span class="fa-3x">
+                  <i class="fab fa-twitter-square"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://uk.linkedin.com/in/nantheera-anantrasirichai-389243107/" target="_blank">
+                <span class="fa-3x">
+                    <i class="fab fa-linkedin"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/pui-nantheera">
+                <span class="fa-3x">
+                    <i class="fab fa-github-square"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://research-information.bris.ac.uk/en/persons/n-anantrasirichai">
+                <span class="fa-3x">
+                    <i class="ai ai-cv-square"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p><a href='https://www.bristol.ac.uk' target="_blank"><img src="uob-logo.svg" width="100%" height="20%" alt=""></a></p>
+        <p><a href='https://www.bristol.ac.uk/vision-institute' target="_blank"><img src="BVI_colour.svg" width="100%" height="20%" alt=""></a></p>
+        <p><a href='https://vilab.blogs.bristol.ac.uk' target="_blank"><img src="VIL_logo.svg" width="100%" height="20%" alt=""></a></p>
+      </div>
+    </div>
   </div>
-
-</header>
+</div>
+<div class="container-md">
+  <ul class="tab-menu" style="justify-content: flex-end;">
+    <li><a href="index.html">About</a></li>
+    <li><a href="people.html">People</a></li>
+    <li><a href="research.html">Projects</a></li>
+    <li class="active"><a href="publications.html">Publications</a></li>
+    <li><a href="activities.html">News</a></li>
+    <li><a href="download.html">Download</a></li>
+  </ul>
+</div>
 
 <div class="filter-chips" id="chips">
   <span class="chip active" data-filter="all">All</span>
@@ -882,6 +929,9 @@
 <footer>
   <p>Mirrored from <a href="https://pui-nantheera.github.io/publications.html" target="_blank" style="color:#999">pui-nantheera.github.io</a></p>
 </footer>
+
+</div>
+</div>
 
 <script>
   const chips = document.querySelectorAll('.chip');
