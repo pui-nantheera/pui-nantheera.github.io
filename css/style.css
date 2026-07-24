@@ -196,6 +196,7 @@ h5 {color: #555;
     text-decoration: none;
 }
 .people-card a:hover .people-name {
+    font-weight: 500;
     color: #06837e;
 }
 @media (max-width: 640px) {
