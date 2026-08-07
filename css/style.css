@@ -148,7 +148,7 @@ h5 {color: #555;
 }
 .activity-list li {
     display: grid;
-    grid-template-columns: 130px 1fr;
+    grid-template-columns: 150px 1fr;
     gap: 16px;
     padding: 7px 0;
     border-bottom: 1px solid #eee;
